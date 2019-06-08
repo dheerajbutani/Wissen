@@ -1,0 +1,20 @@
+show user; =>not sql cmd but an environment cmd
+connect to system user=>conn sys as sysdba;
+desc <table_name>;=>descripion of table
+conn <username>;=>connect to user
+dba_users=>metadata for info of users of db
+---schema name and username will always be same-----
+tab=>stores all the tables
+
+user_xyz,all_xyz =>works for all
+dba_users,v$xyz=>works for only sysdba
+select username,created,account_status from dba_users;
+
+alter user hr identified by <password> account unlock;
+now try login wih new password for user hr
+
+alter user hr account lock;=>lock the account
+orcl is database
+to connect to remote db:
+sqlplus username/password@dbname
+
